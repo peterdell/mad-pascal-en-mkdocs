@@ -22,6 +22,9 @@ end.
 
 ## [UNIT](https://www.freepascal.org/docs-html/ref/refse111.html#x224-24600016.2)
 
+> **WARNING:**
+> _The file name with the module must match the name entered after the word UNIT in terms of capitalization._
+
 The `UNIT` modules come only in the form of source `.pas` files, they cannot be compiled separately.
 
 The `UNIT` modules consist of sections:
@@ -34,7 +37,7 @@ The `UNIT` modules consist of sections:
 {
   Example UNIT
 }
-unit Unit1;
+unit Unit1;      // -> filename 'Unit1.pas'   !!! keep the same case !!!
 
 interface
 
@@ -57,7 +60,7 @@ end.
 
 Example:
 ```delphi
-unit test;
+unit test;       // -> filename 'test.pas'
 
 interface
 
