@@ -73,6 +73,14 @@ var
 procedure test(a,b,c: integer); register;
 ```
 
+## [STRIPED]()
+
+The `STRIPED` modifier is idented for arrays of datatypes with size greater than one byte per element. It changes the memory layout for arrays for better performance of indexed array access. It is supported for arrays with a maximum index range of `[0..255]`.
+
+```delphi
+[striped] tsqrt: array [0..255] of shortreal;
+```
+
 ## [Initialization](https://www.freepascal.org/docs-html/ref/refse24.html)
 
 **Mad Pascal** initializes all global and local variables once upon program start to the equivalent of zero or the explicitly specifed values.
